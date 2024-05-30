@@ -223,11 +223,6 @@ header {
   gap: 1.5rem;
 }
 
-.navfooter{
-    display: flex;
-    justify-content: space-between;
-}
-
 
 .contact-box h3 {
   margin-bottom: 1rem;
@@ -274,7 +269,7 @@ header {
     --h2-font: 1.7rem;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   section {
     padding: 50px 8%;
   }
