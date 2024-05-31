@@ -51,6 +51,15 @@ header {
   padding: 18px 100px;
   box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 }
+.home {
+    width: 100%;
+    padding: 50vh 0vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/6ca722ce-6769-47fe-a6ab-3c9b2f8861fe_169.jpeg);
+    background-size: cover;
+  }
 .logo {
   font-size: 1.2rem;
   font-weight: 600;
@@ -73,20 +82,12 @@ header {
   cursor: pointer;
   display: none;
 }
-.home {
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 1.5rem;
-}
 .home-img img {
   width: 100%;
 }
 .home-text h1 {
   font-size: var(--big-font);
-  color: var(--main-color);
+  color: #fff;
 }
 .home-text h2 {
   font-size: var(--h2-font);
