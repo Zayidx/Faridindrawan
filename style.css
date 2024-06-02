@@ -409,8 +409,8 @@ header {
   position: relative;
 }
 #portfolio figure img {
-  width: 350px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
 }
 #portfolio figure figcaption {
   position: absolute;
@@ -517,6 +517,7 @@ header {
   #contact p {
     font-size: 1.85rem;
   }
+  
 }
 
 @media (min-width: 61.9em) {
@@ -534,5 +535,9 @@ header {
   }
   #contact p {
     font-size: 2.25rem;
+  }
+  #portfolio figure img {
+    width: 100%;
+    height: 200px;
   }
 }
