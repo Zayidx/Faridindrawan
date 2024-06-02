@@ -27,4 +27,4 @@ $(function() {
        distance: "100%"
     });
   
-  
+})
