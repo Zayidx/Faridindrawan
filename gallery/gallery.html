@@ -1,74 +1,203 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Abidzar Rizky Ghifary</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RIFQI ARDITYA PUTRA</title>
-    <!-- Box Icons -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Link To CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
+    />
     <link rel="stylesheet" href="gallery.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <a href="../index.html" class="logo">Rifqi Arditya Putra</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+    <div class="menu-responsive">
+      <nav>
+        <ul>
+          <li><a class="scroll" href="../about/about.html">About</a></li>
+          <li>
+            <a class="scroll" href="../history/history.html">History</a>
+          </li>
+          <li>
+            <a class="scroll" href="../culture/culture.html">Culture</a>
+          </li>
+          <li>
+            <a class="scroll" href="../recreation/recreation.html"
+              >Recreation</a
+            >
+          </li>
+          <li>
+            <a class="scroll" href="../ethnicity/ethnicity.html">Ethnicity</a>
+          </li>
+          <li>
+            <a class="scroll" href="../gallery/gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-      <ul class="navbar">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about/about.html">About</a></li>
-        <li><a href="../history/history.html">History</a></li>
-        <li><a href="../culture/culture.html">Culture</a></li>
-        <li><a href="../recreation/recreation.html">Recreation</a></li>
-        <li><a href="../ethnicity/ethnicity.html">Ethnicity</a></li>
-        <li><a href="../gallery/gallery.html">Gallery</a></li>
-        <!-- Dark Mode -->
-        <div class="bx bx-moon" id="darkmode"></div>
-      </ul>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="header__top">
+            <div class="col-md-6 header__top-brand">
+              <a style="text-decoration: none" href="../index.html"
+                ><h1>Abidzar Rizky Ghifary</h1></a
+              >
+              <hr />
+            </div>
+            <nav class="col-md-6 header__top-nav hidden-md-down">
+              <ul>
+                <li><a class="scroll" href="../about/about.html">About</a></li>
+                <li>
+                  <a class="scroll" href="../history/history.html">History</a>
+                </li>
+                <li>
+                  <a class="scroll" href="../culture/culture.html">Culture</a>
+                </li>
+                <li>
+                  <a class="scroll" href="../recreation/recreation.html"
+                    >Recreation</a
+                  >
+                </li>
+                <li>
+                  <a class="scroll" href="../ethnicity/ethnicity.html"
+                    >Ethnicity</a
+                  >
+                </li>
+                <li>
+                  <a class="scroll" href="../gallery/gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="col-md-6 header__top--responsive hidden-lg-up">
+              <ul>
+                <li>
+                  <a class="menu-bars" href="#"
+                    ><i class="fa fa-bars" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <h1 data-aos="fade-up" id="home">Gallery Sulawesi Selatan</h1>
-    <div class="container ">
-        <img data-aos="fade-right" src="../img/1612975176-tetap-GAMBAR 3.jpg" alt="">
-        <img data-aos="fade-left" src="../img/6ca722ce-6769-47fe-a6ab-3c9b2f8861fe_169.jpeg" alt="">
-        <img data-aos="fade-right" src="../img/akuduku.jpeg" alt="">
-        <img data-aos="fade-left" src="../img/Anjungan-Sulawesi-Selatan-scaled.jpg" alt="">
-        <img data-aos="fade-right" src="../img/appalili1.jpg" alt="">
-        <img data-aos="fade-left" src="../img/arate.jpeg" alt="">
-        <img data-aos="fade-right" src="../img/Baju-Adat-Bugis.jpg" alt="">
-        <img data-aos="fade-left" src="../img/Bendungan Parigi.jpeg" alt="">
-        <img data-aos="fade-right" src="../img/benteng.jpg" alt="">
-        <img data-aos="fade-left" src="../img/dentol.jpg" alt="">
-        <img data-aos="fade-right" src="../img/Desa Kete Kesu.jpg" alt="">
-        <img data-aos="fade-left" src="../img/gununglatimojong.webp" alt="">
-        <img data-aos="fade-right" src="../img/upacra.jpg" alt="">
-        <img data-aos="fade-left" src="../img/toraja.jpg" alt="">
-        <img data-aos="fade-right" src="../img/tanjung-bira.jpg" alt="">
-        <img data-aos="fade-left" src="../img/Taman-Nasional-Bantimurung-Bulusaraung.jpg" alt="">
-        <img data-aos="fade-right" src="../img/Taman Prasejarah Leang-Leang.jpeg" alt="">
-        <img data-aos="fade-left" src="../img/suku-bugis-makassar-sulsel-543-.jpg" alt="">
-    </div>
-    <!-- Connect -->
-    <section class="connect">
-        <div class="connect-text">
-          <span>Go Up!</span>
+    <section id="portfolio">
+      <h2>Gallery</h2>
+      <hr />
+      <div class="container">
+        <div class="portfolio__projects">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Aceh.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Gayo.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Alas.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Singkil.jpeg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Aneuk Jamee.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Suku Julu.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Air Terjun Pria Laot.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Buntul Rintis.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Pakaian Adat Aceh.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Danau Aneuk Laot.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Dermaga Pantai Menye.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Danau Laut Tawar.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/masjid-raya-baiturrahman-nanggroe-aceh-darussalam.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Tarian-Aceh.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Upacara-Peusijuek.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/saman-traditional-dance-aceh-2.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Rumah Adat Aceh Krong Bade.jpg" />
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <figure>
+                <img src="../img/Goa Sarang.jpg" />
+              </figure>
+            </div>
+          </div>
         </div>
-        <a href="#home" class="btn">Click Here</a>
-      </section>
-  
-      <!-- Copyright -->
-      <div class="copyright">
-        <p>© Rifqi Arditya Putra All Right Reserved.</p>
       </div>
+    </section>
+
+    <section id="footer">
+      <p>© Abidzar Rizky Ghifary All Right Reserved.</p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-</body>
+  </body>
 </html>
