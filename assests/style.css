@@ -317,7 +317,7 @@ nav a {
 
 #cowogendang {
   position: absolute;
-  right: 0;
+  right: 1rem;
   margin-top: -5rem;
   width: 7rem;
   height: auto;
