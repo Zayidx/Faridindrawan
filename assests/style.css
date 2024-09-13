@@ -256,6 +256,7 @@ nav a {
   text-align: center;
   color: #fffff0;
   font-style: italic;
+  max-width: 100%;
 }
 
 .quotes hr {
@@ -607,24 +608,25 @@ section .story .fotostory img {
 
 section .story .fotostory hr {
   transform: rotate(90deg);
-  height: 3rem;
+  height: 1rem;
+  border: 2px solid #916e3d;
 }
 
 #bungakiri {
-  width: 50%;
+  width: 40%;
   position: absolute;
-  left: -3rem;
+  left: 0rem;
   transform: rotate(30deg);
-  margin-top: -7rem;
+  margin-top: -5rem;
   animation: shake 10s ease-in 0s infinite;
 }
 #bungakanan {
   
   position: absolute;
-  width: 50%;
-  right: -3rem;
+  width: 40%;
+  right: 0;
   transform: rotate(-30deg);
-  margin-top: -7rem;
+  margin-top: -5rem;
   animation: shake 10s ease-in 0s infinite;
 }
 
@@ -1176,9 +1178,10 @@ section #rumah {
   }
 
   section .story .fotostory hr {
-    height: 3rem;
+    height: 10rem;
+    margin: 0rem 5rem;
     color: black;
-    display: none;
+    border: 2px solid #916e3d;
   }
 
   #bungastory {
