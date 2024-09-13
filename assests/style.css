@@ -152,12 +152,13 @@ img {
   background-image: url(../assests/img/img-noise-361x370.png);
 }
 .audio-icon-wrapper {
+  max-width: 100v;
   width: 3rem;
   height: 3rem;
   font-size: 3rem;
   position: fixed;
   z-index: 99;
-  bottom: 2.5rem;
+  bottom: 3rem;
   right: 2rem;
   cursor: pointer;
   animation: rotating 4s linear infinite;
@@ -624,7 +625,7 @@ section .story .fotostory hr {
   
   position: absolute;
   width: 40%;
-  right: 0;
+  right: 0.7rem;
   transform: rotate(-30deg);
   margin-top: -5rem;
   animation: shake 10s ease-in 0s infinite;
@@ -632,7 +633,7 @@ section .story .fotostory hr {
 
 #bungastory {
   position: absolute;
-  right: 0;
+  right: 0.7rem;
   width: 7rem;
   margin-top: -7rem;
   right: 2rem;
