@@ -91,7 +91,7 @@ body {
 
 /* Pastikan elemen-elemen lainnya seperti gambar atau konten yang panjang tidak melewati batas */
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -104,11 +104,11 @@ img {
   background-image: url("../assests/img/heroo.png");
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: 100vh;
   background-repeat: no-repeat;
   justify-content: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 5vh;
   background-attachment: fixed;
 }
 
@@ -371,7 +371,7 @@ nav a {
   left: 0;
   margin-top: -15rem;
   height: 30rem;
-  width: 100%;
+  max-width: 100%;
 }
 .lokasi h2 {
   font-family: jawa;
@@ -395,7 +395,7 @@ nav a {
 
 /* gallery photo pengantin */
 .gallery-container {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   position: relative;
   margin-top: 5rem;
@@ -426,12 +426,12 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   padding-top: 30px;
 }
 
 .gallery-video video {
-  max-width: 100vh;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -449,19 +449,14 @@ iframe {
   }
 }
 
-@media (max-width: 600px) {
-  .gallery-video video {
-    max-width: 95%;
-  }
-}
 .section-special-guests {
-  max-width: 100vh;
+  max-width: 100%;
   overflow-x: auto; /* Mengizinkan scroll horizontal pada tabel */
   box-sizing: border-box;
 }
 .section-special-guests {
   margin-top: 2rem;
-  width: 100%;
+  max-width: 100%;
   max-width: 800px;
   color: #916e3d;
   background-image: url(../assests/img/img-noise-361x370.png);
@@ -474,7 +469,7 @@ iframe {
 }
 .section-special-guests table {
   padding: 2rem 1rem;
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   background-image: url(../assests/img/bgtable.png);
   background-size: cover;
@@ -550,7 +545,7 @@ button:hover {
 }
 .RSVP .rsvpData {
   overflow-y: auto;
-  width: 100%;
+  max-width: 100%;
   height: 20rem;
   scrollbar-color: #916e3d rgb(255, 255, 255);
   background-image: url(../assests/img/wayanggendut.png);
@@ -558,7 +553,7 @@ button:hover {
   background-position: 1rem 2rem;
 }
 table {
-  width: 100%;
+  max-width: 100%;
   background-color: #916e3d;
   color: #fffff0;
   border-collapse: collapse;
@@ -607,7 +602,7 @@ section .story .fotostory {
 }
 
 section .story .fotostory img {
-  width: 100%;
+  max-width: 100%;
 }
 
 section .story .fotostory hr {
@@ -624,6 +619,7 @@ section .story .fotostory hr {
   animation: shake 10s ease-in 0s infinite;
 }
 #bungakanan {
+  
   position: absolute;
   width: 50%;
   right: -3rem;
@@ -670,7 +666,6 @@ section .gift .gifts-content {
   background-color: #916e3d;
   padding: 0.5rem;
   border-radius: 10px;
-  font-size: 0.7rem;
 }
 .gifts-content .payment img {
   width: 7rem;
@@ -687,11 +682,11 @@ section #rumah {
   margin-top: -14rem;
   opacity: 20%;
   z-index: 0;
-  width: 100%;
+  max-width: 100%;
 }
 
 .massages {
-  width: 90%;
+  max-width: 100%;
   padding: 2rem 2rem 2rem 1rem;
   background-image: url(../assests/img/covermassages.png);
   background-size: cover;
@@ -742,10 +737,7 @@ section #rumah {
   padding: 1rem;
 }
 .massages ul li {
-  border-bottom: 5px solid #bca860;
   background-color: #fffffc;
-  padding: 0.5rem 1rem 1.5rem 0.5rem;
-  border-radius: 10px;
 }
 .thanks {
   padding: 2rem 1rem;
@@ -787,6 +779,9 @@ section #rumah {
 }
 /* Media Query for Laptops and Desktops */
 @media (min-width: 767px) and (max-width: 1280px) {
+  .gallery-video video{
+    width: 50%;
+  }
   .hero {
     background-size: 130%;
   }
@@ -1016,7 +1011,7 @@ section #rumah {
   }
 
   .section-special-guests {
-    max-width: 100vh;
+    max-width: 100%;
     overflow-x: auto; /* Mengizinkan scroll horizontal pada tabel */
     box-sizing: border-box;
     text-align: center;
@@ -1042,7 +1037,7 @@ section #rumah {
   }
   .section-special-guests table {
     padding: 2rem 1rem;
-    width: 100%;
+    max-width: 100%;
 
     background-image: url(../assests/img/bgtable.png);
     background-size: cover;
@@ -1053,7 +1048,7 @@ section #rumah {
     border: 2px solid #785c34;
     padding: 1rem 1rem;
     text-align: left;
-    width: 100%;
+    max-width: 100%;
     color: #fffff0;
   }
   .RSVP {
@@ -1078,7 +1073,7 @@ section #rumah {
   input[type="text"],
   input[type="number"],
   input[type="email"] {
-    width: 100%;
+    max-width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 0.5rem;
@@ -1119,7 +1114,7 @@ section #rumah {
   .RSVP .rsvpData {
     overflow-x: hidden;
     overflow-y: auto;
-    width: 100%;
+    max-width: 100%;
     height: 20rem;
     background-image: url(../assests/img/wayanggendut.png);
     background-size: 50%;
@@ -1127,7 +1122,7 @@ section #rumah {
     background-position: top;
   }
   table {
-    width: 100%;
+   width: 100%;
     background-color: #916e3d;
     color: #fffff0;
     border-collapse: collapse;
@@ -1166,6 +1161,7 @@ section #rumah {
   }
   section .story p {
     color: #916e3d;
+    font-size: 1rem;
   }
   section .story .fotostory {
     display: flex;
@@ -1242,10 +1238,10 @@ section #rumah {
     margin-top: -40rem;
     opacity: 20%;
     z-index: 0;
-    width: 100%;
+    max-width: 100%;
   }
   .massages {
-    width: 100%;
+    max-width: 100%;
 
     margin-top: 5rem;
 
@@ -1301,7 +1297,7 @@ section #rumah {
   .massages ul li {
     border-bottom: 5px solid #bca860;
     background-color: #fffffc;
-    padding: 0.5rem 1rem 1.5rem 0.5rem;
+    padding: 0.5rem 1rem 1.5rem 0.5rem; 
     border-radius: 10px;
   }
 
