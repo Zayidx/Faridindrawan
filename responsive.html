@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP & Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        textarea, select, input[type="text"], input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .copy-area {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>RSVP (Konfirmasi Kehadiran)</h2>
+    <form id="rsvpForm">
+        <div class="form-group">
+            <label for="name">Nama Tamu:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">No Telp:</label>
+            <input type="number" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Kehadiran:</label>
+            <input type="radio" id="hadir" name="kehadiran" value="Hadir" required>
+            <label for="hadir">Hadir</label>
+            <input type="radio" id="tidak_hadir" name="kehadiran" value="Tidak Hadir" required>
+            <label for="tidak_hadir">Tidak Hadir</label>
+        </div>
+        <div class="form-group">
+            <label>Menu Makanan:</label>
+            <input type="checkbox" id="menu_vegan" name="menu" value="Vegan">
+            <label for="menu_vegan">Vegan</label>
+            <input type="checkbox" id="menu_non_vegan" name="menu" value="Non-Vegan">
+            <label for="menu_non_vegan">Non-Vegan</label>
+        </div>
+        <div class="form-group">
+            <label for="guests">Jumlah Tamu:</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Komentar:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <button type="button" onclick="submitRSVP()">Submit RSVP</button>
+        <button type="button" onclick="copyRSVP()">Copy RSVP</button>
+        <textarea id="rsvpOutput" class="copy-area" readonly></textarea>
+    </form>
+</section>
+
+<section>
+    <h2>Pesan untuk Pengantin</h2>
+    <form id="messageForm">
+        <div class="form-group">
+            <label for="message">Pesan & Doa:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="button" onclick="submitMessage()">Submit Pesan</button>
+        <button type="button" onclick="copyMessage()">Copy Pesan</button>
+        <textarea id="messageOutput" class="copy-area" readonly></textarea>
+    </form>
+</section>
+
+<script>
+    // Submit RSVP function
+    function submitRSVP() {
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const kehadiran = document.querySelector('input[name="kehadiran"]:checked').value;
+        const menu = Array.from(document.querySelectorAll('input[name="menu"]:checked')).map(el => el.value).join(', ');
+        const guests = document.getElementById('guests').value;
+        const comments = document.getElementById('comments').value;
+
+        const rsvpMessage = `Informasi Tamu\nNama Tamu: ${name}\nNo Telp: ${phone}\nEmail: ${email}\nKehadiran: ${kehadiran}\nMenu Makanan: ${menu}\nJumlah Tamu: ${guests}\nKomentar: ${comments}`;
+        document.getElementById('rsvpOutput').value = rsvpMessage;
+
+        localStorage.setItem('rsvpData', rsvpMessage);
+    }
+
+    // Copy RSVP function
+    function copyRSVP() {
+        const rsvpOutput = document.getElementById('rsvpOutput');
+        rsvpOutput.select();
+        document.execCommand('copy');
+        alert('RSVP copied to clipboard!');
+    }
+
+    // Submit Message function
+    function submitMessage() {
+        const message = document.getElementById('message').value;
+        const messageText = `Pesan: ${message}`;
+        document.getElementById('messageOutput').value = messageText;
+
+        localStorage.setItem('messageData', messageText);
+    }
+
+    // Copy Message function
+    function copyMessage() {
+        const messageOutput = document.getElementById('messageOutput');
+        messageOutput.select();
+        document.execCommand('copy');
+        alert('Pesan copied to clipboard!');
+    }
+
+    // Restore saved data from localStorage
+    window.onload = function() {
+        if (localStorage.getItem('rsvpData')) {
+            document.getElementById('rsvpOutput').value = localStorage.getItem('rsvpData');
+        }
+        if (localStorage.getItem('messageData')) {
+            document.getElementById('messageOutput').value = localStorage.getItem('messageData');
+        }
+    }
+</script>
+
+</body>
+</html>

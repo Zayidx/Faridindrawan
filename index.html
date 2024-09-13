@@ -1,157 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>M. Dzaki Pasha A</title>
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><h5>M. Dzaki Pasha A</h5></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="history.html">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="culture.html">Culture</a>
-            </li>
-           
-            <li class="nav-item">
-              <a class="nav-link" href="recreation.html">Recreation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ethnicity.html">Ethnicity</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container">
-        <div class="masthead-heading text-uppercase" data-aos="zoom-in-up">
-          Provinsi Banten
-        </div>
 
-        <a class="btn btn-primary btn-xl" href="#services"
-          >Learn More <i class="ai-arrow-right"></i
-        ></a>
-      </div>
-    </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase" data-aos="flip-up">
-            About
-          </h2>
-          <h3 class="section-subheading text-muted">
-            Banten adalah sebuah provinsi di Indonesia yang terletak di bagian
-            paling barat Pulau Jawa. Ibu kota provinsi ini adalah Serang,
-            sementara kota terbesar di Banten adalah Tangerang. Banten memiliki
-            kekayaan budaya dan alam yang melimpah, termasuk pantai-pantai
-            indah, pegunungan, serta cagar alam yang menjadi rumah bagi beragam
-            flora dan fauna. Selain itu, Banten juga dikenal dengan berbagai
-            destinasi wisata seperti Taman Nasional Ujung Kulon, Pulau Umang,
-            dan banyak situs sejarah yang menarik.
-          </h3>
-          <h2 class="section-heading text-uppercase" data-aos="flip-up">
-            history
-          </h2>
-          <h3 class="section-subheading text-muted">
-            Sejarah Banten dimulai pada abad ke-16 ketika Kesultanan Banten
-            berdiri sebagai kekuatan maritim dan pusat perdagangan penting di
-            Nusantara. Kesultanan ini didirikan oleh Sultan Maulana Hasanuddin
-            pada tahun 1527, setelah berhasil memerdekakan Banten dari kekuasaan
-            Kerajaan Pajajaran. Banten mencapai puncak kejayaannya pada masa
-            pemerintahan Sultan Ageng Tirtayasa, dengan wilayah kekuasaannya
-            yang meliputi sebagian besar Jawa bagian barat dan Sumatra bagian
-            selatan. Namun, kekuatan Banten mulai menurun setelah konflik
-            internal dan kolonialisasi oleh Belanda pada abad ke-17, yang
-            akhirnya menyebabkan berakhirnya Kesultanan Banten pada tahun 1813.
-          </h3>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <style>
+      #main {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section data-aos="fade-in">
+      <div class="hero">
+        <div class="tittle" data-aos="fade-down">
+          <img
+            src="./assests/img/1.png"
+            width="100px"
+            alt=""
+            data-aos="fade-down"
+          />
+          <p class="img-tittle">Pernikahan</p>
+          <h1 data-aos="flip-left">Farid &amp; Kyla</h1>
+          <p data-aos="fade-up">
+            Tanpa Mengurangi Rasa Hormat. Kami Mengundang Bapak/Ibu/Saudara/i
+            Untuk Hadir Di Acara Pernikahan Kami
+          </p>
+          <h3>Yth. Roni Kusuma</h3>
+          <p data-aos="zoom-in"><strong>15 January 2008</strong></p>
+          <button id="view-invitation">Lihat Undangan</button>
         </div>
       </div>
     </section>
-    <!-- Footer-->
+    <main id="main">
+      <div id="audio-container">
+        <audio id="song" autoplay loop>
+          <source
+            src="./assests/audio/Sampai Jadi Debu - Banda Neira Saxophone Cover by Daniel Desfrangasta (mp3cut.net).m4a"
+            type="audio/mp3"
+          />
+        </audio>
+        <div class="audio-icon-wrapper">
+          <i
+            class="fa-solid fa-compact-disc"
+            id="disc"
+            style="display: none"
+          ></i>
+        </div>
+      </div>
 
-    <center>Copyright &copy; M. Dzaki Pasha A</center>
-    <br />
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <!-- Bootstrap JS and jQuery (required for Bootstrap functionality) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <nav>
+        <a href="#pengantin" data-aos="fade-up">Pengantin</a>
+        <a
+          href="#lokasi"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="200"
+          >Lokasi</a
+        >
+        <a
+          href="#gallery"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="400"
+          >Galeri</a
+        >
+        <a
+          href="#rsvp"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="800"
+          >Kehadiran</a
+        >
+        <a
+          href="#hadiah"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-delay="1000"
+          >Hadiah</a
+        >
+      </nav>
+      <section class="countdown">
+        <h2 data-aos="fade-up">Menuju Hari Bahagia</h2>
+        <div class="countdown-container">
+          <div class="days-container" data-aos="fade-in" data-aos-delay="200">
+            <div class="days">0</div>
+            <div class="days-label">days</div>
+          </div>
+
+          <div class="hours-container" data-aos="fade-in" data-aos-delay="400">
+            <div class="hours">00</div>
+            <div class="hours-label">hours</div>
+          </div>
+
+          <div
+            class="minutes-container"
+            data-aos="fade-in"
+            data-aos-delay="600"
+          >
+            <div class="minutes">00</div>
+            <div class="minutes-label">minutes</div>
+          </div>
+
+          <div
+            class="seconds-container"
+            data-aos="fade-in"
+            data-aos-delay="800"
+          >
+            <div class="seconds">00</div>
+            <div class="seconds-label">seconds</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="quotes" data-aos="fade-in">
+        <hr />
+        <p>
+          "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+          istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa
+          tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+          sayang." <br />
+          (QS. Ar-Rum: 21)
+        </p>
+        <hr />
+        <img
+          src="./assests/img/19.png"
+          id="daunkiri"
+          alt=""
+          data-aos="fade-in"
+          data-aos-duration="3000"
+        />
+        <img
+          src="./assests/img/19.png"
+          id="daunkanan"
+          alt=""
+          data-aos="fade-in"
+          data-aos-duration="3000"
+        />
+      </div>
+
+      <div class="pengantin" id="pengantin">
+        <div class="pengantinpria">
+          <div class="textpengantin" data-aos="fade-right">
+            <h2 data-aos="fade-up">Farid Indrawan</h2>
+            <p>Putra Ketiga</p>
+            <p>Bpk. Jamal Kumar</p>
+            <div class="iconMedsos">
+              <a
+                href=""
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="500"
+              >
+                <i class="ai-instagram-fill"></i>
+              </a>
+              <a
+                href=""
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="800"
+              >
+                <i class="ai-facebook-fill" data-aos="fade-up"></i>
+              </a>
+            </div>
+          </div>
+          <img
+            src="./assests/img/pengantinpria.png"
+            alt=""
+            data-aos="zoom-in"
+          />
+        </div>
+
+        <img
+          src="./assests/img/13.png"
+          id="cowogendang"
+          alt=""
+          data-aos="zoom-in-left"
+        />
+        <img
+          src="./assests/img/14.png"
+          id="cewenyanyi"
+          alt=""
+          data-aos="zoom-in-right"
+        />
+
+        <div class="pengantinwanita">
+          <img
+            src="./assests/img/pengantinwanita.png"
+            alt=""
+            data-aos="zoom-in"
+          />
+          <div class="textpengantin" data-aos="fade-left">
+            <h2 data-aos="fade-up">Kyla Viveane</h2>
+            <p>Putri Pertama</p>
+            <p>Bpk. Gojo Sunandar</p>
+            <div class="iconMedsos">
+              <a href="" data-aos="fade-up" data-aos-delay="500">
+                <i class="ai-instagram-fill"></i>
+              </a>
+              <a href="" data-aos="fade-up" data-aos-delay="800">
+                <i class="ai-facebook-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="waktuLokasi" id="lokasi">
+        <div id="lokasiatas" class="lokasi" data-aos="fade-right">
+          <h2>Akad Nikah</h2>
+          <hr />
+          <h4>12 Desember 2024</h4>
+          <p>Pukul: 08.00 WIB</p>
+          <p>Masjid Al-Mubaarok</p>
+          <p>
+            Masjid Jami' Al-Mubaarok, Jl. Dewi Sartika, RT.005/RW.008,
+            Margahayu, Kec. Bekasi Tim., Kota Bks, Jawa Barat 17113
+          </p>
+          <br />
+          <a href="https://maps.app.goo.gl/rkXAmJ6WHbmZMPU36"
+            ><i class="ai-location"></i> Lokasi</a
+          >
+        </div>
+        <img src="./assests/img/25.png" id="gapura" alt="" />
+        <div class="lokasi" data-aos="fade-left">
+          <h2>Resepsi</h2>
+          <hr />
+          <div class="text-lokasi">
+            <h4>13 Desember 2024</h4>
+            <p>Pukul: 08.00 WIB</p>
+            <p>Gedung Serbaguna</p>
+            <p>
+              Komplek Pengairan, RT.004/RW.012, Rawa Semut, Margahayu, Kec.
+              Bekasi Tim., Kota Bks, Jawa Barat 17113
+            </p>
+            <br />
+          </div>
+          <a
+            data-aos="flip-down"
+            data-aos-delay="1000"
+            href="https://maps.app.goo.gl/9pdkWqdhFLpYBPAu8"
+            ><i class="ai-location"></i> Lokasi</a
+          >
+        </div>
+      </div>
+      <img src="./assests/img/22.png" id="bungakiri" alt="" />
+      <img src="./assests/img/22.png" id="bungakanan" alt="" />
+      <!--Gallery photos-->
+
+      <section id="gallery" class="gallery-container">
+        <h2 data-aos="fade-up">Gallery</h2>
+        <section class="gallery-video" data-aos="fade-up" data-aos-delay="500">
+          <video autoplay loop muted>
+            <source src="./assests/video/Cinematic Prewedding.mp4" />
+          </video>
+        </section>
+        <div class="gallery" data-aos="fade-left">
+          <img src="./assests/img/foto1.jpg" alt="foto1" />
+          <img src="./assests/img/foto1.jpg" alt="foto2" />
+          <img src="./assests/img/foto3.jpg" alt="foto3" />
+          <img src="./assests/img/foto4.jpg" alt="foto4" />
+          <img src="./assests/img/foto5.jpg" alt="" />
+          <img src="./assests/img/foto1.jpg" alt="foto1" />
+          <img src="./assests/img/foto1.jpg" alt="foto2" />
+          <img src="./assests/img/foto3.jpg" alt="foto3" />
+          <img src="./assests/img/foto4.jpg" alt="foto4" />
+          <img src="./assests/img/foto5.jpg" alt="" />
+          <img src="./assests/img/foto1.jpg" alt="foto1" />
+          <img src="./assests/img/foto1.jpg" alt="foto2" />
+          <img src="./assests/img/foto3.jpg" alt="foto3" />
+          <img src="./assests/img/foto4.jpg" alt="foto4" />
+          <img src="./assests/img/foto5.jpg" alt="" />
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/1-GLrbJzG3A?si=JQqfAoMlcyv6TrFh"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="special-guests">
+        <div class="section-special-guests">
+          <h2 data-aos="fade-up">Tamu Khusus</h2>
+          <table>
+            <tr>
+              <td
+                data-aos="fade-in"
+                style="text-align: center; vertical-align: middle"
+                colspan="2"
+              >
+                Turut Mengundang
+              </td>
+            </tr>
+            <tr>
+              <th data-aos="fade-in" data-aos-delay="200">Nama</th>
+              <th data-aos="fade-in" data-aos-delay="1200">Hubungan</th>
+            </tr>
+            <tr>
+              <td data-aos="fade-in" data-aos-delay="400">Budi Santoso</td>
+              <td data-aos="fade-in" rowspan="2" data-aos-delay="1400">
+                Saudara
+              </td>
+            </tr>
+
+            <tr>
+              <td data-aos="fade-in" data-aos-delay="600" colspan="2">
+                Siti Aminah
+              </td>
+            </tr>
+            <tr>
+              <td data-aos="fade-in" data-aos-delay="800">Andi Prasetyo</td>
+              <td data-aos="fade-in" data-aos-delay="1600">Rekan Kerja</td>
+            </tr>
+            <tr>
+              <td data-aos="fade-in" data-aos-delay="1000">Satria Ade Putra</td>
+              <td data-aos="fade-in" data-aos-delay="1800">Guru Sekolah</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- <button onclick="clearRSVP()">Clear RSVP</button> -->
+
+      <section class="RSVP" id="rsvp">
+        <h2>Konfirmasi Kehadiran</h2>
+        <form id="rsvpForm">
+          <div class="form-group">
+            <label data-aos="fade-right" for="name">Nama Tamu :</label>
+            <input
+              data-aos="fade-right"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right" for="phone">No Telp :</label>
+            <input
+              data-aos="fade-right"
+              type="number"
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right" for="email">Email :</label>
+            <input
+              data-aos="fade-right"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right">Kehadiran :</label>
+            <div id="radio-formm"></div>
+            <label data-aos="fade-right" for="hadir">Hadir</label>
+            <input
+              data-aos="fade-right"
+              type="radio"
+              id="hadir"
+              name="kehadiran"
+              value="Hadir"
+              required
+            />
+            <label data-aos="fade-right" for="tidak_hadir">Tidak Hadir</label>
+            <input
+              data-aos="fade-right"
+              type="radio"
+              id="tidak_hadir"
+              name="kehadiran"
+              value="Tidak Hadir"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right">Menu Makanan :</label>
+            <label data-aos="fade-right" for="menu_vegan">Vegan</label>
+            <input
+              data-aos="fade-right"
+              type="checkbox"
+              id="menu_vegan"
+              name="menu"
+              value="Vegan"
+            />
+            <label data-aos="fade-right" for="menu_non_vegan">Non-Vegan</label>
+            <input
+              data-aos="fade-right"
+              type="checkbox"
+              id="menu_non_vegan"
+              name="menu"
+              value="Non-Vegan"
+            />
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right" for="guests">Jumlah Tamu :</label>
+            <select data-aos="fade-right" id="guests" name="guests">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-aos="fade-right" for="comments">Komentar :</label>
+            <textarea
+              data-aos="fade-right"
+              id="comments"
+              name="comments"
+              rows="4"
+            ></textarea>
+          </div>
+          <button data-aos="fade-right" type="button" onclick="submitRSVP()">
+            Submit RSVP
+          </button>
+        </form>
+        <h2 data-aos="fade-up" id="datakehadiran">Data Kehadiran</h2>
+        <div data-aos="fade-up" class="rsvpData">
+          <table id="rsvpTable">
+            <thead>
+              <tr>
+                <th>Nama Tamu</th>
+                <th>No Telp</th>
+                <th>Email</th>
+                <th>Kehadiran</th>
+                <th>Menu Makanan</th>
+                <th>Jumlah Tamu</th>
+                <th>Komentar</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div class="story">
+          <h2 data-aos="fade-up">Story</h2>
+          <p data-aos="fade-up">
+            Dulu, kami hanya dua orang biasa yang tak sengaja dipertemukan.
+            Seiring waktu, tawa dan cerita mengisi hari-hari kami, hingga kami
+            sadar: hidup ini terasa lebih indah bersama. Sekarang, kami siap
+            memulai bab baru dan ingin berbagi kebahagiaan ini dengan Anda di
+            hari spesial kami.
+          </p>
+          <div class="fotostory">
+            <hr size="30" />
+            <img src="./assests/img/fotostory.webp" alt="" />
+            <hr />
+          </div>
+        </div>
+        <img
+          data-aos="fade-up-left"
+          data-aos-delay="1s"
+          id="bungastory"
+          src="./assests/img/24.png"
+          alt=""
+        />
+      </section>
+      <section id="hadiah">
+        <div class="gift">
+          <h2 data-aos="fade-up">Kirim Hadiah</h2>
+          <p>*klik logo payment untuk menyalin no rekening</p>
+          <div class="gifts-content">
+            <div class="payment">
+              <img
+                data-aos="fade-up"
+                onclick="copyText('083129701342')"
+                src="./assests/img/gopay.png"
+                alt="Bank Account"
+              />
+              <p>
+                No. 083129701342 <br />
+                An. Farid Indrawan
+              </p>
+            </div>
+
+            <div class="payment">
+              <img
+                data-aos="fade-up"
+                data-aos-delay="200"
+                onclick="copyText('08312971342')"
+                src="./assests/img/dana.png"
+                alt="Gift Address"
+              />
+              <p>
+                No. 083129701342 <br />
+                An. Farid Indrawan
+              </p>
+            </div>
+          </div>
+        </div>
+        <img id="rumah" src="./assests/img/rumah.png" alt="" />
+      </section>
+      <section class="massages">
+        <h2 data-aos="fade-up">Pesan untuk Pengantin</h2>
+        <form id="messageForm">
+          <div class="form-group">
+            <label data-aos="fade-up" for="message">Pesan & Doa:</label>
+            <textarea
+              data-aos="fade-up"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button data-aos="fade-up" type="button" onclick="submitMessage()">
+            Submit Pesan
+          </button>
+        </form>
+        <h3 data-aos="fade-up">Daftar Pesan</h3>
+        <ul data-aos="fade-in" id="messageList"></ul>
+      </section>
+      <img src="./assests/img/4.png" id="wayangcowo" alt="" />
+      <img src="./assests/img/5.png" id="wayangcewe" alt="" />
+      <section class="thanks" id="thanks">
+        <img
+          src="./assests/img/vectorpengantin.png"
+          id="pengantinvector"
+          alt=""
+          data-aos="fade-up"
+        />
+        <h2 data-aos="fade-in">Terima Kasih</h2>
+        <p>
+          Kami ingin mengucapkan terima kasih yang sebesar-besarnya atas
+          kehadiran dan kasih sayang Anda pada hari pernikahan Kami. Kehadiran
+          Anda telah membuat acara ini lebih berarti
+        </p>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    </script>
-    <script>
-      $(document).ready(function () {
-        // Show preview modal when image in carousel is clicked
-        $(".carousel-item img").on("click", function () {
-          var imgSrc = $(this).attr("src");
-          $("#previewImage").attr("src", imgSrc);
-          $("#previewModal").modal("show");
-        });
+      AOS.init({
+        duration: 1000, // Mengurangi durasi animasi
+        delay: 0, // Menghilangkan delay AOS
       });
     </script>
   </body>
