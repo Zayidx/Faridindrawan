@@ -670,6 +670,7 @@ section .gift .gifts-content {
   background-color: #916e3d;
   padding: 0.5rem;
   border-radius: 10px;
+  font-size: 0.7rem;
 }
 .gifts-content .payment img {
   width: 7rem;
@@ -692,7 +693,7 @@ section #rumah {
 .massages {
   width: 90%;
   padding: 2rem 2rem 2rem 1rem;
-  background-image: url(./assests/img/covermassages.png);
+  background-image: url(../assests/img/covermassages.png);
   background-size: cover;
   background-position: right;
   color: #fffff0;
@@ -741,7 +742,10 @@ section #rumah {
   padding: 1rem;
 }
 .massages ul li {
+  border-bottom: 5px solid #bca860;
   background-color: #fffffc;
+  padding: 0.5rem 1rem 1.5rem 0.5rem;
+  border-radius: 10px;
 }
 .thanks {
   padding: 2rem 1rem;
@@ -1297,7 +1301,7 @@ section #rumah {
   .massages ul li {
     border-bottom: 5px solid #bca860;
     background-color: #fffffc;
-    padding: 0.5rem 1rem 1.5rem 0.5rem; 
+    padding: 0.5rem 1rem 1.5rem 0.5rem;
     border-radius: 10px;
   }
 
