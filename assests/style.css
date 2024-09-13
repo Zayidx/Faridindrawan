@@ -1,11 +1,11 @@
 @font-face {
   font-family: "poppins";
-  src: url("./assests/font/Poppins-Medium.ttf");
+  src: url("../assests/font/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: "jawa";
-  src: url("./assests/font/JAWAPALSU.TTF");
+  src: url("../assests/font/JAWAPALSU.TTF");
 }
 
 @keyframes shake {
@@ -80,7 +80,6 @@ html {
 * {
   margin: 0;
   scroll-behavior: smooth;
-
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -100,8 +99,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .hero {
-  background-image: url("./assests/img/heroo.png");
+  background-image: url("../assests/img/heroo.png");
   background-size: cover;
   background-position: center;
   height: 85vh;
@@ -149,7 +149,7 @@ img {
 
 #main {
   display: block;
-  background-image: url(./assests/img/img-noise-361x370.png);
+  background-image: url(../assests/img/img-noise-361x370.png);
 }
 .audio-icon-wrapper {
   width: 3rem;
@@ -199,7 +199,7 @@ nav a {
 .countdown {
   text-align: center;
   padding: 2rem 2rem;
-  background-image: url(./assests/img/12.png);
+  background-image: url(../assests/img/12.png);
   background-size: cover;
   background-position: bottom;
 }
@@ -248,7 +248,7 @@ nav a {
   margin-bottom: 5px;
 }
 .quotes {
-  background-image: url(./assests/img/quotesbg.png);
+  background-image: url(../assests/img/quotesbg.png);
   background-position: center;
   background-size: cover;
   padding: 2rem 2rem;
@@ -283,7 +283,7 @@ nav a {
   z-index: -1;
 
   padding: 4rem 0;
-  background-image: url(./assests/img/img-noise-361x370.png);
+  background-image: url(../assests/img/img-noise-361x370.png);
 }
 .pengantinpria {
   margin-top: 2rem;
@@ -351,7 +351,7 @@ nav a {
 .waktuLokasi {
   padding: 1rem 0rem 0rem 0rem;
 
-  background-image: url(./assests/img/img-noise-361x370.png);
+  background-image: url(../assests/img/img-noise-361x370.png);
   color: #916e3d;
   text-align: center;
 }
@@ -464,7 +464,7 @@ iframe {
   width: 100%;
   max-width: 800px;
   color: #916e3d;
-  background-image: url(./assests/img/img-noise-361x370.png);
+  background-image: url(../assests/img/img-noise-361x370.png);
   text-align: center;
   padding: 0 1rem;
 }
@@ -476,7 +476,7 @@ iframe {
   padding: 2rem 1rem;
   width: 100%;
   border-collapse: collapse;
-  background-image: url(./assests/img/bgtable.png);
+  background-image: url(../assests/img/bgtable.png);
   background-size: cover;
   background-position: left;
 }
@@ -553,7 +553,7 @@ button:hover {
   width: 100%;
   height: 20rem;
   scrollbar-color: #916e3d rgb(255, 255, 255);
-  background-image: url(./assests/img/wayanggendut.png);
+  background-image: url(../assests/img/wayanggendut.png);
   background-size: contain;
   background-position: 1rem 2rem;
 }
@@ -587,7 +587,7 @@ li {
   color: white;
   padding: 1rem 2rem;
   text-align: center;
-  background-color: url(./assests/img/img-noise-361x370.png);
+  background-color: url(../assests/img/img-noise-361x370.png);
 }
 
 section .story h2 {
@@ -692,10 +692,11 @@ section #rumah {
 .massages {
   width: 90%;
   padding: 2rem 2rem 2rem 1rem;
-  background-image: url(./assests/img/covermassages.png);
+  background-image: url(../assests/img/covermassages.png);
   background-size: cover;
   background-position: right;
   color: #fffff0;
+  text-decoration: underline #916e3d;
 }
 
 .massages h2 {
@@ -747,7 +748,7 @@ section #rumah {
   padding: 2rem 1rem;
   text-align: center;
   justify-content: center;
-  background-color: url(./assests/img/img-noise-361x370.png);
+  background-color: url(../assests/img/img-noise-361x370.png);
 }
 #wayangcowo {
   position: absolute;
@@ -783,9 +784,6 @@ section #rumah {
 }
 /* Media Query for Laptops and Desktops */
 @media (min-width: 767px) and (max-width: 1280px) {
-  body {
-    background-color: green;
-  }
   .hero {
     background-size: 130%;
   }
@@ -883,7 +881,7 @@ section #rumah {
   .pengantin {
     z-index: -1;
     padding: 2rem 20rem;
-    background-image: url(./assests/img/img-noise-361x370.png);
+    background-image: url(../assests/img/img-noise-361x370.png);
   }
   .pengantinpria,
   .pengantinwanita {
@@ -950,7 +948,7 @@ section #rumah {
   .waktuLokasi {
     padding: 1rem 0rem 0rem 0rem;
 
-    background-image: url(./assests/img/img-noise-361x370.png);
+    background-image: url(../assests/img/img-noise-361x370.png);
     color: #916e3d;
     text-align: center;
     display: flex;
@@ -1025,7 +1023,7 @@ section #rumah {
     margin-top: 2rem;
 
     color: #916e3d;
-    background-image: url(./assests/img/img-noise-361x370.png);
+    background-image: url(../assests/img/img-noise-361x370.png);
     text-align: center;
     padding: 0 0rem;
     justify-content: center;
@@ -1043,7 +1041,7 @@ section #rumah {
     padding: 2rem 1rem;
     width: 100%;
 
-    background-image: url(./assests/img/bgtable.png);
+    background-image: url(../assests/img/bgtable.png);
     background-size: cover;
     background-position: left;
   }
@@ -1120,7 +1118,7 @@ section #rumah {
     overflow-y: auto;
     width: 100%;
     height: 20rem;
-    background-image: url(./assests/img/wayanggendut.png);
+    background-image: url(../assests/img/wayanggendut.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: top;
@@ -1155,7 +1153,7 @@ section #rumah {
     color: white;
     padding: 1rem 10rem;
     text-align: center;
-    background-color: url(./assests/img/img-noise-361x370.png);
+    background-color: url(../assests/img/img-noise-361x370.png);
   }
 
   section .story h2 {
@@ -1248,7 +1246,7 @@ section #rumah {
 
     margin-top: 5rem;
 
-    background-image: url(./assests/img/covermassages.png);
+    background-image: url(../assests/img/covermassages.png);
     background-size: cover;
     background-position: right;
     color: #fffff0;
@@ -1298,17 +1296,15 @@ section #rumah {
     text-align: left;
   }
   .massages ul li {
-    border-bottom: 5px solid #bca860;
+    border-bottom: 5px solid #d1b551;
     background-color: #fffffc;
-    padding: 0.5rem 1rem 1.5rem 0.5rem; 
-    border-radius: 10px;
   }
 
   .thanks {
     padding: 2rem 20rem;
     text-align: center;
     justify-content: center;
-    background-color: url(./assests/img/img-noise-361x370.png);
+    background-color: url(../assests/img/img-noise-361x370.png);
   }
   #wayangcowo {
     position: absolute;
