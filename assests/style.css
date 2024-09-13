@@ -692,11 +692,10 @@ section #rumah {
 .massages {
   width: 90%;
   padding: 2rem 2rem 2rem 1rem;
-  background-image: url(../assests/img/covermassages.png);
+  background-image: url(./assests/img/covermassages.png);
   background-size: cover;
   background-position: right;
   color: #fffff0;
-  text-decoration: underline #916e3d;
 }
 
 .massages h2 {
@@ -1296,8 +1295,10 @@ section #rumah {
     text-align: left;
   }
   .massages ul li {
-    border-bottom: 5px solid #d1b551;
+    border-bottom: 5px solid #bca860;
     background-color: #fffffc;
+    padding: 0.5rem 1rem 1.5rem 0.5rem; 
+    border-radius: 10px;
   }
 
   .thanks {
