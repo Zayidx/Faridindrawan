@@ -85,7 +85,7 @@ const countDownClock = (endDate) => {
   Format: '2024-12-31T23:59:59' for countdown to Dec 31, 2024 at 11:59:59 PM.
   Make sure HTML elements with class 'days', 'hours', 'minutes', 'seconds' exist.
 */
-countDownClock('2024-09-11T18:00:00');
+countDownClock('2024-09-17T18:00:00');
 
 
 

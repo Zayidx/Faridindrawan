@@ -79,6 +79,7 @@ html {
 
 * {
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   font-family: "Times New Roman", Times, serif;
 }
@@ -401,20 +402,24 @@ nav a {
   overflow: hidden;
   position: relative;
   margin-top: 5rem;
+  
   text-align: center;
+  border: solid black 1px;
+  justify-content: center;
+
 }
 
 .gallery-container h2 {
   font-family: jawa;
   margin-bottom: -1rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   color: #916e3d;
 }
 
 .gallery {
-  margin-top: 30px;
   display: flex;
   animation: scroll 24s linear infinite;
+ 
 }
 
 .gallery img {
@@ -428,8 +433,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  padding-top: 30px;
+  margin: 0px 0.5rem;
+  padding: 30px 0;
 }
 
 .gallery-video video {
@@ -495,14 +500,33 @@ td {
 .RSVP h2 {
   text-align: center;
   font-family: jawa;
+  margin-top: 1rem;
+}
+.flex-form{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
+.flex-form-input{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .form-group label {
   display: block;
   margin: 10px 0 5px;
 }
+
+select{
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #916e3d;
+}
+
 textarea,
-select,
 input[type="text"],
 input[type="number"],
 input[type="email"] {
@@ -524,6 +548,7 @@ input[type="email"]:focus {
     var(--input-focus-s),
     var(--input-focus-l)
   );
+  
 }
 .form-group {
   margin-bottom: 15px;
@@ -741,6 +766,8 @@ section #rumah {
 }
 .massages ul li {
   background-color: #fffffc;
+  border-bottom: 5px solid #bca860;
+  border-radius: 10px;
 }
 .thanks {
   padding: 2rem 1rem;
@@ -777,7 +804,6 @@ section #rumah {
 }
 
 .thanks p {
-  font: 1rem;
   color: #916e3d;
 }
 /* Media Query for Laptops and Desktops */
@@ -1002,9 +1028,9 @@ section #rumah {
   #bungakanan {
     position: absolute;
     width: 30%;
-    right: -3rem;
+    right: -2rem;
     transform: rotate(-30deg);
-    margin-top: -7rem;
+    margin-top: -10rem;
     animation: shake 10s ease-in 0s infinite;
   }
   iframe {
@@ -1059,7 +1085,7 @@ section #rumah {
     padding: 2rem 15rem;
     color: #916e3d;
   }
-
+  
   .RSVP h2 {
     text-align: center;
     font-family: jawa;
@@ -1072,7 +1098,7 @@ section #rumah {
     margin: 10px 0 5px;
   }
   textarea,
-  select,
+
   input[type="text"],
   input[type="number"],
   input[type="email"] {
