@@ -99,11 +99,6 @@ img {
   height: auto;
 }
 
-.carousel img {
-  max-width: 100%;
-  height: auto;
-}
-
 .cover {
   background-image: url("../assests/img/bg.jpg");
   background-size: cover;
@@ -123,7 +118,6 @@ img {
 
 .tittle img {
   width: 30vh;
-  margin-bottom: -70px;
 }
 
 .tittle p {
@@ -132,16 +126,14 @@ img {
 }
 .tittle h1 {
   font-family: alsscrp;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fffffc;
+  margin-bottom: -1rem;
   line-height: 4rem;
-  padding: 20px 0px;
-  margin-top: -20px;
 }
 
 #main {
   display: block;
-  background-image: url(../assests/img/img-noise-361x370.png);
 }
 .audio-icon-wrapper {
   max-width: 100v;
@@ -195,7 +187,7 @@ nav a {
 .countdown {
   text-align: center;
   padding: 3rem 2rem;
-  background-image: url(../assests/img/bg-quotes.jpg);
+  background-image: url(../assests/img/bg-countdown.jpg);
 
   background-size: cover;
   background-position: bottom;
@@ -246,7 +238,7 @@ nav a {
   margin-bottom: 5px;
 }
 .quotes {
-  background-color: var(--goldhover);
+  background-color: var(--red);
   padding: 2rem 2rem;
   font-size: 16px;
   text-align: center;
@@ -254,30 +246,36 @@ nav a {
   max-width: 100%;
 }
 
+.quotes .red {
+  color: var(--gold);
+}
+.quotes img {
+  width: 10rem;
+  margin-top: -2rem;
+}
 
 .pengantin {
   z-index: -1;
   padding: 4rem 0;
   background-image: url(../assests/img/bg-pengantin.jpg);
   background-repeat: no-repeat;
-  
+
   background-size: 40rem;
   background-position: top;
   justify-content: center;
   align-items: center;
-  border: blue solid 1px;
 }
 
 .pengantinprofile {
   align-items: center;
   text-align: center;
   padding: 1rem 2rem;
-  border: #bb3631 solid 1px;
+
 }
 
 .textpengantin h2 {
   color: var(--red);
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: alsscrp;
 }
 .textpengantin p {
@@ -305,32 +303,23 @@ nav a {
 }
 
 .waktuLokasi {
-  padding: 1rem 0rem 0rem 0rem;
-
-  background-image: url(../assests/img/img-noise-361x370.png);
+  background-color: var(--red);
   color: var(--gold);
   text-align: center;
 }
 
 .lokasi {
-  padding: 1rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
-  margin: 4rem 1rem 1rem 1rem;
-  background: rgba(255, 255, 255, 0.17);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.6px);
-  -webkit-backdrop-filter: blur(4.6px);
 }
-#gapura {
-  position: absolute;
-  left: 0;
-  margin-top: -15rem;
-  height: 30rem;
-  max-width: 100%;
+.lokasi iframe {
+  width: 20rem;
+  margin-top: -10px;
 }
 .lokasi h2 {
+  margin-top: 1rem;
   font-family: alsscrp;
+  font-size: 2rem;
 }
 .lokasi p {
   font-size: 12px;
@@ -342,42 +331,52 @@ nav a {
   background-color: var(--gold);
   color: #fffff0;
   padding: 10px 20px;
-  border-radius: 20px;
   font-size: 12px;
+  border: solid var(--red) 2px;
+  border-radius: 0.5rem;
 }
 .lokasi a:hover {
-  background-color: var(--gold);
+  background-color: var(--goldhover);
 }
 
-/* gallery photo pengantin */
 .gallery-container {
+  margin-top: -1rem;
   max-width: 100%;
   overflow: hidden;
-  position: relative;
-  margin-top: 5rem;
-
   text-align: center;
-
-  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  background-image: url(./img/bg-gallery.png);
 }
 
 .gallery-container h2 {
+  font-size: 2rem;
   font-family: alsscrp;
   margin-bottom: -1rem;
   margin-top: 3rem;
-  color: var(--gold);
+  color: var(--goldhover);
 }
 
-.gallery {
+.gallery-section {
   display: flex;
-  animation: scroll 24s linear infinite;
+  max-width: 100wh;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.gallery img {
-  width: 900px;
-  height: 200px;
+.gallery-section img {
+  width: auto;
+  height: 7rem;
+  filter: saturate(0);
   margin-right: 10px;
   border-radius: 10px;
+}
+
+.gallery-section img:hover {
+  filter: saturate(1);
 }
 
 .gallery-video {
@@ -396,62 +395,52 @@ nav a {
 iframe {
   width: 23.3rem;
   height: 15rem;
-  margin-top: 2rem;
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.section-special-guests {
+.tamukhusus {
   max-width: 100%;
   overflow-x: auto; /* Mengizinkan scroll horizontal pada tabel */
   box-sizing: border-box;
+  background-color: var(--gold);
 }
-.section-special-guests {
-  margin-top: 2rem;
+.tamukhusus {
   max-width: 100%;
   max-width: 800px;
   color: var(--gold);
-  background-image: url(../assests/img/img-noise-361x370.png);
   text-align: center;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
-.section-special-guests h2 {
+.tamukhusus h2 {
   font-family: alsscrp;
+  font-size: 2rem;
+  color: var(--red);
 }
-.section-special-guests table {
+.tamukhusus table {
   padding: 2rem 1rem;
   max-width: 100%;
   border-collapse: collapse;
-  background-image: url(../assests/img/bgtable.png);
   background-size: cover;
   background-position: left;
 }
-.section-special-guests table th,
+.tamukhusus table th,
 td {
-  border: 2px solid var(--gold);
   padding: 1rem 1rem;
   text-align: left;
   width: 100%;
-  color: #fffff0;
+  color: var(--gold);
 }
 
 .RSVP {
-  margin-top: 2rem;
   padding: 2rem 2rem 2rem 1rem;
   color: var(--gold);
+  background-color: var(--red);
 }
 
 .RSVP h2 {
   text-align: center;
   font-family: alsscrp;
   margin-top: 1rem;
+  font-size: 2rem;
 }
 .flex-form {
   display: flex;
@@ -486,7 +475,7 @@ input[type="email"] {
   margin-bottom: 10px;
   border-radius: 0.5rem;
   border: none;
-  border-bottom: 2px solid var(--gold);
+  border: 2px solid var(--gold);
 }
 
 textarea:focus,
@@ -524,14 +513,13 @@ button:hover {
   overflow-y: auto;
   max-width: 100%;
   height: 20rem;
-  scrollbar-color: var(--gold) rgb(255, 255, 255);
-  background-image: url(../assests/img/wayanggendut.png);
+  scrollbar-color: var(--gold) white;
   background-size: contain;
   background-position: 1rem 2rem;
 }
 table {
   max-width: 100%;
-  background-color: var(--gold);
+  background-color: var(--red);
   color: #fffff0;
   border-collapse: collapse;
   margin-top: 1rem;
@@ -539,7 +527,7 @@ table {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 2px solid var(--gold);
 }
 th,
 td {
@@ -557,19 +545,32 @@ li {
 }
 .story {
   color: white;
-  padding: 1rem 2rem;
+  background-color: var(--gold);
   text-align: center;
-  background-color: url(../assests/img/img-noise-361x370.png);
 }
 
 section .story h2 {
   font-family: alsscrp;
+  color: var(--red);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.scroll-story {
+  overflow-x: scroll;
+}
+.carousel-story {
+  overflow-x: scroll;
+  display: flex;
+  width: 70rem;
+}
+.story-text {
+  width: 50rem;
+  padding: 2rem;
+  background-color: #bb3631;
   color: var(--gold);
 }
-section .story p {
-  color: var(--gold);
-  font-size: 12px;
-}
+
 section .story .fotostory {
   display: flex;
   gap: 2rem;
@@ -582,51 +583,22 @@ section .story .fotostory img {
   max-width: 100%;
 }
 
-section .story .fotostory hr {
-  transform: rotate(90deg);
-  height: 1rem;
-  border: 2px solid var(--gold);
-}
-
-#bungakiri {
-  width: 40%;
-  position: absolute;
-  left: 0rem;
-  transform: rotate(30deg);
-  margin-top: -5rem;
-  animation: shake 10s ease-in 0s infinite;
-}
-#bungakanan {
-  position: absolute;
-  width: 40%;
-  right: 0.7rem;
-  transform: rotate(-30deg);
-  margin-top: -5rem;
-  animation: shake 10s ease-in 0s infinite;
-}
-
-#bungastory {
-  position: absolute;
-  right: 0.7rem;
-  width: 7rem;
-  margin-top: -7rem;
-  right: 2rem;
-  animation: shake 10s ease-in 0s infinite;
-}
-
 section .gift {
   padding: 4rem 1rem;
+  margin-top: -2rem;
   text-align: center;
+  background-color: var(--gold);
 }
 
 section .gift h2 {
-  color: var(--gold);
+  color: var(--red);
   font-family: alsscrp;
+  font-size: 2rem;
 }
 
 .gift p {
   margin-bottom: 1rem;
-  color: var(--gold);
+  color: var(--red);
 }
 
 section .gift .gifts-content {
@@ -635,45 +607,37 @@ section .gift .gifts-content {
   gap: 2rem;
 }
 .payment {
-  z-index: 2;
+  z-index: 3;
 }
 .payment p {
   margin-top: 0.5rem;
-  color: #fffff0;
-  background-color: var(--gold);
-  padding: 0.5rem;
-  border-radius: 10px;
+  color: var(--red);
 }
 .gifts-content .payment img {
   width: 7rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   z-index: 1;
-  filter: grayscale(2);
+  filter: grayscale(1);
 }
 
 .gifts-content img:hover {
-  filter: none;
-}
-section #rumah {
-  position: absolute;
-  margin-top: -14rem;
-  opacity: 20%;
-  z-index: 0;
-  max-width: 100%;
+  filter: grayscale(0);
 }
 
 .massages {
   max-width: 100%;
   padding: 2rem 2rem 2rem 1rem;
-  background-image: url(../assests/img/covermassages.png);
+  background-image: url(./img/bg-massage.png);
   background-size: cover;
   background-position: right;
-  color: #fffff0;
+  color: var(--red);
+  margin: -2rem 0;
 }
 
 .massages h2 {
   text-align: center;
   font-family: alsscrp;
+  font-size: 2rem;
 }
 
 .massages h3 {
@@ -692,64 +656,22 @@ section #rumah {
 .section-messages textarea {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--gold);
   border-radius: 4px;
   min-height: 80px;
   resize: vertical;
-  margin-bottom: 16px;
-}
-
-#messageList {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  overflow-y: scroll;
-  height: 10rem;
-  scrollbar-color: var(--gold) rgb(255, 255, 255);
-}
-
-.massages ul {
-  color: black;
-  text-align: left;
-  padding: 1rem;
-}
-.massages ul li {
-  background-color: #fffffc;
-  border-bottom: 5px solid #bca860;
-  border-radius: 10px;
 }
 .thanks {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 7rem 1rem;
   text-align: center;
   justify-content: center;
-  background-color: url(../assests/img/img-noise-361x370.png);
-}
-#wayangcowo {
-  position: absolute;
-  width: 6rem;
-  left: 0;
-  margin-top: 8rem;
-  animation: shake 10s ease-in 0s infinite;
-}
-#wayangcewe {
-  position: absolute;
-  width: 6rem;
-  right: 0;
-  margin-top: 8rem;
-  animation: shake 10s ease-in 0s infinite;
-}
-.thanks #pengantinvector {
-  width: 50%;
-  padding: 2rem 0.5rem 0 0.5rem;
-  background-color: var(--gold);
-  border: 0.5rem solid var(--gold);
-  border-radius: 100px 100px 0 0;
-  box-shadow: 0px 0px 30px 0px rgba(60, 49, 28, 0.75);
+  background-color: var(--red);
 }
 
 .thanks h2 {
   font-family: alsscrp;
   color: var(--gold);
+  font-size: 2rem;
 }
 
 .thanks p {
