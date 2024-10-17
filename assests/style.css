@@ -1,14 +1,11 @@
-/* Color */
-:root {
-  --red: #bb3631;
-  --gold: #d5ad69;
-  --goldhover: #c9a463;
+@font-face {
+  font-family: "poppins";
+  src: url("../assests/font/Poppins-Medium.ttf");
 }
 
-/* Font */
 @font-face {
-  font-family: "alsscrp";
-  src: url("../assests/font/als-script/alsscrp.ttf");
+  font-family: "jawa";
+  src: url("../assests/font/JAWAPALSU.TTF");
 }
 
 @keyframes shake {
@@ -99,15 +96,20 @@ img {
   height: auto;
 }
 
-.cover {
-  background-image: url("../assests/img/bg.jpg");
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  background-image: url("../assests/img/heroo.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
   justify-content: center;
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 5vh;
   background-attachment: fixed;
 }
 
@@ -118,6 +120,7 @@ img {
 
 .tittle img {
   width: 30vh;
+  margin-bottom: -70px;
 }
 
 .tittle p {
@@ -125,15 +128,29 @@ img {
   font-size: 1rem;
 }
 .tittle h1 {
-  font-family: alsscrp;
-  font-size: 3rem;
+  font-family: jawa;
+  font-size: 4rem;
   color: #fffffc;
-  margin-bottom: -1rem;
   line-height: 4rem;
+  padding: 20px 0px;
+  margin-top: -20px;
+}
+
+.tittle button {
+  background-color: #785c34;
+  color: #fffff0;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: none;
+}
+
+.tittle button:hover {
+  background-color: #785c34;
 }
 
 #main {
   display: block;
+  background-image: url(../assests/img/img-noise-361x370.png);
 }
 .audio-icon-wrapper {
   max-width: 100v;
@@ -142,8 +159,8 @@ img {
   font-size: 3rem;
   position: fixed;
   z-index: 99;
-  bottom: 1.5rem;
-  right: 25px;
+  bottom: 3rem;
+  right: 2rem;
   cursor: pointer;
   animation: rotating 4s linear infinite;
   transform-origin: center;
@@ -162,19 +179,16 @@ img {
   }
 }
 nav {
-  background-color: var(--gold);
-  padding: 1.5rem;
+  background-color: #785c34;
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
   text-align: center;
   list-style: none;
-  z-index: 5;
-  position: fixed;
-  bottom: 1rem;
-  width: 60%;
-  margin-left: 25px;
-  border-bottom: var(--red) solid 3px;
-  border-radius: 1rem;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  border-bottom: #fffff0 solid 3px;
 }
 
 nav a {
@@ -186,17 +200,14 @@ nav a {
 
 .countdown {
   text-align: center;
-  padding: 3rem 2rem;
-  background-image: url(../assests/img/bg-countdown.jpg);
-
+  padding: 2rem 2rem;
+  background-image: url(../assests/img/12.png);
   background-size: cover;
   background-position: bottom;
 }
 .countdown h2 {
-  margin-top: 2rem;
-  color: #fffffc;
-  font-family: alsscrp;
-  margin-bottom: 1em;
+  color: #785c34;
+  font-family: jawa;
 }
 
 .countdown-container {
@@ -214,13 +225,14 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--gold);
-  border: 5px solid var(--red);
+  background-color: #785c349a;
+  border: 5px solid rgba(255, 255, 255, 0.3);
   font-size: 0.5rem;
   width: 100px;
   height: 5rem;
-  border-radius: 0.5rem;
-  color: var(--red);
+  border-radius: 1rem;
+  color: #fffff0;
+  z-index: 1;
 }
 
 .days,
@@ -238,88 +250,134 @@ nav a {
   margin-bottom: 5px;
 }
 .quotes {
-  background-color: var(--red);
+  background-image: url(../assests/img/quotesbg.png);
+  background-position: center;
+  background-size: cover;
   padding: 2rem 2rem;
   font-size: 16px;
   text-align: center;
   color: #fffff0;
+  font-style: italic;
   max-width: 100%;
 }
 
-.quotes .red {
-  color: var(--gold);
+.quotes hr {
+  margin: 1rem 0;
 }
-.quotes img {
-  width: 10rem;
-  margin-top: -2rem;
+
+.quotes #daunkiri {
+  position: absolute;
+  left: 0;
+  width: 8rem;
+  margin-top: -5rem;
+  z-index: 1;
+}
+
+.quotes #daunkanan {
+  position: absolute;
+  right: 0;
+  transform: scaleX(-1);
+  width: 8rem;
+  margin-top: -5rem;
+  z-index: 1;
 }
 
 .pengantin {
   z-index: -1;
-  padding: 4rem 0;
-  background-image: url(../assests/img/bg-pengantin.jpg);
-  background-repeat: no-repeat;
 
-  background-size: 40rem;
-  background-position: top;
-  justify-content: center;
-  align-items: center;
+  padding: 4rem 0;
+  background-image: url(../assests/img/img-noise-361x370.png);
+}
+.pengantinpria {
+  margin-top: 2rem;
+}
+.pengantinpria,
+.pengantinwanita {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-.pengantinprofile {
-  align-items: center;
-  text-align: center;
-  padding: 1rem 2rem;
-
+.pengantinwanita .textpengantin {
+  padding-left: 2rem;
 }
 
 .textpengantin h2 {
-  color: var(--red);
-  font-size: 3rem;
-  font-family: alsscrp;
+  color: #916e3d;
+  font-family: jawa;
 }
 .textpengantin p {
   font-size: 16px;
-  color: var(--red);
+  color: #916e3d;
 }
 .pengantin img {
-  width: 12rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 20px;
 }
 
+#cowogendang {
+  position: absolute;
+  right: 1rem;
+  margin-top: -5rem;
+  width: 7rem;
+  height: auto;
+  animation: shake 10s ease-in 0s infinite;
+  z-index: 1;
+}
+
+#cewenyanyi {
+  position: absolute;
+  left: 0;
+  width: 7rem;
+  height: auto;
+  margin-top: 5rem;
+  animation: shake 10s ease-in-out 0s infinite;
+  z-index: 1;
+}
+
 .iconMedsos {
+  display: flex;
   font-size: 1rem;
   gap: 5px;
   margin-top: 1rem;
 }
 
 .iconMedsos a i {
-  background-color: var(--gold);
-  border-radius: 0.5rem;
+  background-color: #916e3d;
+  border-radius: 100px;
   text-decoration: none;
   color: #fffff0;
   padding: 0.5rem 0.7rem;
 }
 
 .waktuLokasi {
-  background-color: var(--red);
-  color: var(--gold);
+  padding: 1rem 0rem 0rem 0rem;
+
+  background-image: url(../assests/img/img-noise-361x370.png);
+  color: #916e3d;
   text-align: center;
 }
 
 .lokasi {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
+  margin: 4rem 1rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
 }
-.lokasi iframe {
-  width: 20rem;
-  margin-top: -10px;
+#gapura {
+  position: absolute;
+  left: 0;
+  margin-top: -15rem;
+  height: 30rem;
+  max-width: 100%;
 }
 .lokasi h2 {
-  margin-top: 1rem;
-  font-family: alsscrp;
-  font-size: 2rem;
+  font-family: jawa;
 }
 .lokasi p {
   font-size: 12px;
@@ -328,55 +386,46 @@ nav a {
 
 .lokasi a {
   text-decoration: none;
-  background-color: var(--gold);
+  background-color: #916e3d;
   color: #fffff0;
   padding: 10px 20px;
+  border-radius: 20px;
   font-size: 12px;
-  border: solid var(--red) 2px;
-  border-radius: 0.5rem;
 }
 .lokasi a:hover {
-  background-color: var(--goldhover);
+  background-color: #785c34;
 }
 
+/* gallery photo pengantin */
 .gallery-container {
-  margin-top: -1rem;
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+  margin-top: 5rem;
+  
   text-align: center;
-  background-size: cover;
-  background-position: center;
-  justify-content: space-around;
-  border: 1px solid black;
-  background-image: url(./img/bg-gallery.png);
+  justify-content: center;
+
 }
 
 .gallery-container h2 {
-  font-size: 2rem;
-  font-family: alsscrp;
+  font-family: jawa;
   margin-bottom: -1rem;
   margin-top: 3rem;
-  color: var(--goldhover);
+  color: #916e3d;
 }
 
-.gallery-section {
+.gallery {
   display: flex;
-  max-width: 100wh;
-  padding: 1rem;
-  align-items: center;
-  justify-content: space-around;
+  animation: scroll 24s linear infinite;
+ 
 }
 
-.gallery-section img {
-  width: auto;
-  height: 7rem;
-  filter: saturate(0);
+.gallery img {
+  width: 900px;
+  height: 200px;
   margin-right: 10px;
   border-radius: 10px;
-}
-
-.gallery-section img:hover {
-  filter: saturate(1);
 }
 
 .gallery-video {
@@ -395,60 +444,70 @@ nav a {
 iframe {
   width: 23.3rem;
   height: 15rem;
+  margin-top: 2rem;
 }
-.tamukhusus {
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.section-special-guests {
   max-width: 100%;
   overflow-x: auto; /* Mengizinkan scroll horizontal pada tabel */
   box-sizing: border-box;
-  background-color: var(--gold);
 }
-.tamukhusus {
+.section-special-guests {
+  margin-top: 2rem;
   max-width: 100%;
   max-width: 800px;
-  color: var(--gold);
+  color: #916e3d;
+  background-image: url(../assests/img/img-noise-361x370.png);
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
 }
 
-.tamukhusus h2 {
-  font-family: alsscrp;
-  font-size: 2rem;
-  color: var(--red);
+.section-special-guests h2 {
+  font-family: jawa;
 }
-.tamukhusus table {
+.section-special-guests table {
   padding: 2rem 1rem;
   max-width: 100%;
   border-collapse: collapse;
+  background-image: url(../assests/img/bgtable.png);
   background-size: cover;
   background-position: left;
 }
-.tamukhusus table th,
+.section-special-guests table th,
 td {
+  border: 2px solid #785c34;
   padding: 1rem 1rem;
   text-align: left;
   width: 100%;
-  color: var(--gold);
+  color: #fffff0;
 }
 
 .RSVP {
+  margin-top: 2rem;
   padding: 2rem 2rem 2rem 1rem;
-  color: var(--gold);
-  background-color: var(--red);
+  color: #916e3d;
 }
 
 .RSVP h2 {
   text-align: center;
-  font-family: alsscrp;
+  font-family: jawa;
   margin-top: 1rem;
-  font-size: 2rem;
 }
-.flex-form {
+.flex-form{
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.flex-form-input {
+.flex-form-input{
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -458,12 +517,12 @@ td {
   margin: 10px 0 5px;
 }
 
-select {
+select{
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 0.5rem;
   border: none;
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 2px solid #916e3d;
 }
 
 textarea,
@@ -475,7 +534,7 @@ input[type="email"] {
   margin-bottom: 10px;
   border-radius: 0.5rem;
   border: none;
-  border: 2px solid var(--gold);
+  border-bottom: 2px solid #916e3d;
 }
 
 textarea:focus,
@@ -488,22 +547,23 @@ input[type="email"]:focus {
     var(--input-focus-s),
     var(--input-focus-l)
   );
+  
 }
 .form-group {
   margin-bottom: 15px;
 }
 
 button {
-  background-color: var(--gold);
+  background-color: #785c34;
   color: #fffff0;
   padding: 10px 20px;
   font-size: 12px;
-  border: solid var(--red) 2px;
-  border-radius: 0.5rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 button:hover {
-  background-color: var(--goldhover);
+  background-color: #785c34;
 }
 
 #datakehadiran {
@@ -513,13 +573,14 @@ button:hover {
   overflow-y: auto;
   max-width: 100%;
   height: 20rem;
-  scrollbar-color: var(--gold) white;
+  scrollbar-color: #916e3d rgb(255, 255, 255);
+  background-image: url(../assests/img/wayanggendut.png);
   background-size: contain;
   background-position: 1rem 2rem;
 }
 table {
   max-width: 100%;
-  background-color: var(--red);
+  background-color: #916e3d;
   color: #fffff0;
   border-collapse: collapse;
   margin-top: 1rem;
@@ -527,7 +588,7 @@ table {
 table,
 th,
 td {
-  border: 2px solid var(--gold);
+  border: 1px solid black;
 }
 th,
 td {
@@ -545,32 +606,19 @@ li {
 }
 .story {
   color: white;
-  background-color: var(--gold);
+  padding: 1rem 2rem;
   text-align: center;
+  background-color: url(../assests/img/img-noise-361x370.png);
 }
 
 section .story h2 {
-  font-family: alsscrp;
-  color: var(--red);
-  font-size: 2rem;
-  padding-top: 1rem;
+  font-family: jawa;
+  color: #916e3d;
 }
-
-.scroll-story {
-  overflow-x: scroll;
+section .story p {
+  color: #916e3d;
+  font-size: 12px;
 }
-.carousel-story {
-  overflow-x: scroll;
-  display: flex;
-  width: 70rem;
-}
-.story-text {
-  width: 50rem;
-  padding: 2rem;
-  background-color: #bb3631;
-  color: var(--gold);
-}
-
 section .story .fotostory {
   display: flex;
   gap: 2rem;
@@ -583,22 +631,52 @@ section .story .fotostory img {
   max-width: 100%;
 }
 
+section .story .fotostory hr {
+  transform: rotate(90deg);
+  height: 1rem;
+  border: 2px solid #916e3d;
+}
+
+#bungakiri {
+  width: 40%;
+  position: absolute;
+  left: 0rem;
+  transform: rotate(30deg);
+  margin-top: -5rem;
+  animation: shake 10s ease-in 0s infinite;
+}
+#bungakanan {
+  
+  position: absolute;
+  width: 40%;
+  right: 0.7rem;
+  transform: rotate(-30deg);
+  margin-top: -5rem;
+  animation: shake 10s ease-in 0s infinite;
+}
+
+#bungastory {
+  position: absolute;
+  right: 0.7rem;
+  width: 7rem;
+  margin-top: -7rem;
+  right: 2rem;
+  animation: shake 10s ease-in 0s infinite;
+}
+
 section .gift {
   padding: 4rem 1rem;
-  margin-top: -2rem;
   text-align: center;
-  background-color: var(--gold);
 }
 
 section .gift h2 {
-  color: var(--red);
-  font-family: alsscrp;
-  font-size: 2rem;
+  color: #916e3d;
+  font-family: jawa;
 }
 
 .gift p {
   margin-bottom: 1rem;
-  color: var(--red);
+  color: #916e3d;
 }
 
 section .gift .gifts-content {
@@ -607,37 +685,45 @@ section .gift .gifts-content {
   gap: 2rem;
 }
 .payment {
-  z-index: 3;
+  z-index: 2;
 }
 .payment p {
   margin-top: 0.5rem;
-  color: var(--red);
+  color: #fffff0;
+  background-color: #916e3d;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 .gifts-content .payment img {
   width: 7rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   z-index: 1;
-  filter: grayscale(1);
+  filter: grayscale(2);
 }
 
 .gifts-content img:hover {
-  filter: grayscale(0);
+  filter: none;
+}
+section #rumah {
+  position: absolute;
+  margin-top: -14rem;
+  opacity: 20%;
+  z-index: 0;
+  max-width: 100%;
 }
 
 .massages {
   max-width: 100%;
   padding: 2rem 2rem 2rem 1rem;
-  background-image: url(./img/bg-massage.png);
+  background-image: url(../assests/img/covermassages.png);
   background-size: cover;
   background-position: right;
-  color: var(--red);
-  margin: -2rem 0;
+  color: #fffff0;
 }
 
 .massages h2 {
   text-align: center;
-  font-family: alsscrp;
-  font-size: 2rem;
+  font-family: jawa;
 }
 
 .massages h3 {
@@ -656,27 +742,637 @@ section .gift .gifts-content {
 .section-messages textarea {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid var(--gold);
+  border: 1px solid #ddd;
   border-radius: 4px;
   min-height: 80px;
   resize: vertical;
+  margin-bottom: 16px;
+}
+
+#messageList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 10rem;
+  scrollbar-color: #916e3d rgb(255, 255, 255);
+}
+
+.massages ul {
+  color: black;
+  text-align: left;
+  padding: 1rem;
+}
+.massages ul li {
+  background-color: #fffffc;
+  border-bottom: 5px solid #bca860;
+  border-radius: 10px;
 }
 .thanks {
-  padding: 2rem 1rem 7rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   justify-content: center;
-  background-color: var(--red);
+  background-color: url(../assests/img/img-noise-361x370.png);
+}
+#wayangcowo {
+  position: absolute;
+  width: 6rem;
+  left: 0;
+  margin-top: 8rem;
+  animation: shake 10s ease-in 0s infinite;
+}
+#wayangcewe {
+  position: absolute;
+  width: 6rem;
+  right: 0;
+  margin-top: 8rem;
+  animation: shake 10s ease-in 0s infinite;
+}
+.thanks #pengantinvector {
+  width: 50%;
+  padding: 2rem 0.5rem 0 0.5rem;
+  background-color: #785c34;
+  border: 0.5rem solid #916e3d;
+  border-radius: 100px 100px 0 0;
+  box-shadow: 0px 0px 30px 0px rgba(60, 49, 28, 0.75);
 }
 
 .thanks h2 {
-  font-family: alsscrp;
-  color: var(--gold);
-  font-size: 2rem;
+  font-family: jawa;
+  color: #916e3d;
 }
 
 .thanks p {
-  color: var(--gold);
+  color: #916e3d;
 }
 /* Media Query for Laptops and Desktops */
-@media (min-width: 400px) {
+@media (min-width: 500px) {
+  .gallery-video video{
+    width: 50%;
+  }
+  .hero {
+    background-size: 130%;
+  }
+  .tittle img {
+    width: 50vh;
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+  .tittle p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .tittle h1 {
+    font-size: 5rem;
+  }
+
+  .tittle button {
+    font-size: 1rem;
+  }
+  .audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+  }
+  nav {
+    z-index: 999;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    text-align: center;
+    padding: 10rem 1rem;
+  }
+
+  .countdown img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    opacity: 20%;
+  }
+  .countdown h2 {
+    color: #785c34;
+    font-family: jawa;
+    font-size: 3rem;
+  }
+
+  .countdown-container {
+    justify-content: center;
+  }
+
+  .days-container,
+  .hours-container,
+  .minutes-container,
+  .seconds-container {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 3rem;
+  }
+
+  .quotes {
+    padding: 7rem 10rem;
+    font-size: 2rem;
+  }
+  .quotes hr {
+    margin: 2rem 0;
+  }
+
+  .quotes #daunkiri {
+    width: 15rem;
+    margin-top: -7rem;
+  }
+
+  .quotes #daunkanan {
+    width: 15rem;
+    margin-top: -7rem;
+  }
+  #gapura {
+    left: 30%;
+    right: 30%;
+  }
+  .pengantin {
+    z-index: -1;
+    padding: 2rem 20rem;
+    background-image: url(../assests/img/img-noise-361x370.png);
+  }
+  .pengantinpria,
+  .pengantinwanita {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pengantinwanita .textpengantin {
+    padding-left: 0rem;
+  }
+
+  .textpengantin h2 {
+    color: #916e3d;
+    font-family: jawa;
+    font-size: 2rem;
+  }
+  .textpengantin p {
+    font-size: 1rem;
+    color: #916e3d;
+  }
+  .pengantin img {
+    width: 45%;
+    height: 45%;
+    border-radius: 20px;
+  }
+
+  #cowogendang {
+    position: absolute;
+    right: 0;
+    margin-top: -7rem;
+    width: 20rem;
+    height: auto;
+    animation: shake 10s ease-in 0s infinite;
+    z-index: 1;
+  }
+
+  #cewenyanyi {
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    height: auto;
+    margin-top: -7rem;
+    animation: shake 10s ease-in-out 0s infinite;
+    z-index: 1;
+  }
+  .iconMedsos a {
+    text-decoration: none;
+  }
+  .iconMedsos {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+
+  .iconMedsos a i {
+    background-color: #916e3d;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #fffff0;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .waktuLokasi {
+    padding: 1rem 0rem 0rem 0rem;
+
+    background-image: url(../assests/img/img-noise-361x370.png);
+    color: #916e3d;
+    text-align: center;
+    display: flex;
+  }
+
+  .lokasi {
+    padding: 4rem 5rem;
+    text-align: center;
+    margin: 5rem 5rem 1rem 5rem;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+  }
+  #gapura {
+    position: absolute;
+    margin-top: 0rem;
+    margin-left: 1.5rem;
+    width: auto;
+  }
+  .lokasi h2 {
+    font-family: jawa;
+    font-size: 2rem;
+  }
+  .lokasi p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .lokasi a {
+    text-decoration: none;
+    background-color: #916e3d;
+    color: #fffff0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .lokasi a:hover {
+    background-color: #785c34;
+  }
+  #bungakiri {
+    width: 30%;
+    position: absolute;
+    left: -3rem;
+    transform: rotate(30deg);
+    margin-top: -10rem;
+    animation: shake 10s ease-in 0s infinite;
+  }
+  #bungakanan {
+    position: absolute;
+    width: 30%;
+    right: -2rem;
+    transform: rotate(-30deg);
+    margin-top: -10rem;
+    animation: shake 10s ease-in 0s infinite;
+  }
+  iframe {
+    width: 100vh;
+    height: 25rem;
+    margin-top: 2rem;
+  }
+
+  .section-special-guests {
+    max-width: 100%;
+    overflow-x: auto; /* Mengizinkan scroll horizontal pada tabel */
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+  }
+  .section-special-guests {
+    margin-top: 2rem;
+
+    color: #916e3d;
+    background-image: url(../assests/img/img-noise-361x370.png);
+    text-align: center;
+    padding: 0 0rem;
+    justify-content: center;
+  }
+  #special-guests {
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 25%;
+  }
+  .section-special-guests h2 {
+    font-family: jawa;
+    font-size: 3rem;
+  }
+  .section-special-guests table {
+    padding: 2rem 1rem;
+    max-width: 100%;
+
+    background-image: url(../assests/img/bgtable.png);
+    background-size: cover;
+    background-position: left;
+  }
+  .section-special-guests table th,
+  td {
+    border: 2px solid #785c34;
+    padding: 1rem 1rem;
+    text-align: left;
+    max-width: 100%;
+    color: #fffff0;
+  }
+  .RSVP {
+    margin-top: 2rem;
+    padding: 2rem 15rem;
+    color: #916e3d;
+  }
+  
+  .RSVP h2 {
+    text-align: center;
+    font-family: jawa;
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  textarea,
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #916e3d;
+  }
+
+  textarea:focus,
+  select:focus,
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    border-color: hsl(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      var(--input-focus-l)
+    );
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: #785c34;
+    color: #fffff0;
+    padding: 10px 20px;
+    font-size: 12px;
+    border: none;
+  }
+
+  button:hover {
+    background-color: #785c34;
+  }
+
+  #datakehadiran {
+    margin-top: 2rem;
+  }
+  .RSVP .rsvpData {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    height: 20rem;
+    background-image: url(../assests/img/wayanggendut.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  table {
+   width: 100%;
+    background-color: #916e3d;
+    color: #fffff0;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .story {
+    color: white;
+    padding: 1rem 10rem;
+    text-align: center;
+    background-color: url(../assests/img/img-noise-361x370.png);
+  }
+
+  section .story h2 {
+    font-family: jawa;
+    color: #916e3d;
+    font-size: 3rem;
+  }
+  section .story p {
+    color: #916e3d;
+    font-size: 1rem;
+  }
+  section .story .fotostory {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  section .story .fotostory img {
+    width: 50%;
+  }
+
+  section .story .fotostory hr {
+    height: 10rem;
+    margin: 0rem 5rem;
+    color: black;
+    border: 2px solid #916e3d;
+  }
+
+  #bungastory {
+    position: absolute;
+    right: 0;
+    width: 10rem;
+    margin-top: -10rem;
+    right: 20rem;
+    animation: shake 10s ease-in 0s infinite;
+  }
+  section .gift {
+    padding: 10rem 1rem;
+    text-align: center;
+  }
+
+  section .gift h2 {
+    color: #916e3d;
+    font-family: jawa;
+    font-size: 3rem;
+  }
+
+  .gift p {
+    margin-bottom: 1rem;
+    color: #916e3d;
+    font-size: 1rem;
+  }
+
+  section .gift .gifts-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .payment {
+    z-index: 2;
+  }
+  .payment p {
+    z-index: 2;
+    margin-top: 0.5rem;
+    color: #fffff0;
+    background-color: #916e3d;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  .gifts-content .payment img {
+    z-index: 2;
+    width: 20rem;
+    border-radius: 1rem;
+    z-index: 1;
+    filter: grayscale(2);
+  }
+
+  .gifts-content img:hover {
+    filter: none;
+  }
+  section #rumah {
+    position: absolute;
+    margin-top: -40rem;
+    opacity: 20%;
+    z-index: 0;
+    max-width: 100%;
+  }
+  .massages {
+    max-width: 100%;
+
+    margin-top: 5rem;
+
+    background-image: url(../assests/img/covermassages.png);
+    background-size: cover;
+    background-position: right;
+    color: #fffff0;
+    text-decoration: underline #916e3d;
+  }
+
+  .massages h2 {
+    text-align: center;
+    font-family: jawa;
+    font-size: 3rem;
+  }
+
+  .massages h3 {
+    padding: 0rem 10rem;
+    font-size: 2rem;
+  }
+  .massages form {
+    padding: 2rem 10rem;
+  }
+
+  .section-messages label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .section-messages textarea {
+    padding: 5px;
+    font-size: 14px;
+    border-bottom: 2px solid #d1b551;
+    border-radius: 4px;
+    min-height: 80px;
+    resize: vertical;
+    margin-bottom: 16px;
+  }
+
+  #messageList {
+    padding: 2rem 10rem;
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 10rem;
+    scrollbar-color: #916e3d rgb(255, 255, 255);
+  }
+
+  .massages ul {
+    color: black;
+    text-align: left;
+  }
+  .massages ul li {
+    border-bottom: 5px solid #bca860;
+    background-color: #fffffc;
+    padding: 0.5rem 1rem 1.5rem 0.5rem; 
+    border-radius: 10px;
+  }
+
+  .thanks {
+    padding: 2rem 20rem;
+    text-align: center;
+    justify-content: center;
+    background-color: url(../assests/img/img-noise-361x370.png);
+  }
+  #wayangcowo {
+    position: absolute;
+    width: 20rem;
+    left: 0;
+    margin-top: 8rem;
+    animation: shake 10s ease-in 0s infinite;
+  }
+  #wayangcewe {
+    position: absolute;
+    width: 20rem;
+    right: 0;
+    margin-top: 8rem;
+    animation: shake 10s ease-in 0s infinite;
+  }
+  .thanks #pengantinvector {
+    width: 50%;
+    padding: 2rem 0.5rem 0 0.5rem;
+    background-color: #785c34;
+    border: 0.5rem solid #916e3d;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0px 0px 30px 0px rgba(60, 49, 28, 0.75);
+  }
+
+  .thanks h2 {
+    font-family: jawa;
+    color: #916e3d;
+    font-size: 3rem;
+  }
+
+  .thanks p {
+    font: 2rem;
+    color: #916e3d;
+  }
 }
+/* @media only screen and (min-width: 992px) {
+  body {
+    margin-left: 65vh;
+    margin-right: 65vh;
+  }
+} */

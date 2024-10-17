@@ -85,8 +85,34 @@ const countDownClock = (endDate) => {
   Format: '2024-12-31T23:59:59' for countdown to Dec 31, 2024 at 11:59:59 PM.
   Make sure HTML elements with class 'days', 'hours', 'minutes', 'seconds' exist.
 */
-countDownClock('2028-11-13T00:00:00');
+countDownClock('2024-09-17T18:00:00');
 
+
+
+  // Carousel
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+
+}
 
 
 
@@ -97,4 +123,84 @@ function copyText(text) {
   }, function(err) {
       console.error('Gagal menyalin text: ', err);
   });
+}
+
+ // Submit RSVP and store in localStorage
+ function submitRSVP() {
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const kehadiran = document.querySelector('input[name="kehadiran"]:checked').value;
+  const menu = Array.from(document.querySelectorAll('input[name="menu"]:checked')).map(el => el.value).join(', ');
+  const guests = document.getElementById('guests').value;
+  const comments = document.getElementById('comments').value;
+
+  const rsvpData = { name, phone, email, kehadiran, menu, guests, comments };
+
+  let rsvpList = JSON.parse(localStorage.getItem('rsvpList')) || [];
+  rsvpList.push(rsvpData);
+  localStorage.setItem('rsvpList', JSON.stringify(rsvpList));
+
+  displayRSVP();
+}
+
+// Display RSVP data in table
+function displayRSVP() {
+  const rsvpList = JSON.parse(localStorage.getItem('rsvpList')) || [];
+  const rsvpTableBody = document.querySelector('#rsvpTable tbody');
+  rsvpTableBody.innerHTML = '';
+
+  rsvpList.forEach(rsvp => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+          <td>${rsvp.name}</td>
+          <td>${rsvp.phone}</td>
+          <td>${rsvp.email}</td>
+          <td>${rsvp.kehadiran}</td>
+          <td>${rsvp.menu}</td>
+          <td>${rsvp.guests}</td>
+          <td>${rsvp.comments}</td>
+      `;
+      rsvpTableBody.appendChild(row);
+  });
+}
+
+// // Clear RSVP data from localStorage and table
+// function clearRSVP() {
+//   // Remove data from localStorage
+//   localStorage.removeItem('rsvpList');
+  
+//   // Clear the table on the page
+//   const rsvpTableBody = document.querySelector('#rsvpTable tbody');
+//   rsvpTableBody.innerHTML = '';
+// }
+
+// Submit Message and store in localStorage
+function submitMessage() {
+  const message = document.getElementById('message').value;
+
+  let messageList = JSON.parse(localStorage.getItem('messageList')) || [];
+  messageList.push(message);
+  localStorage.setItem('messageList', JSON.stringify(messageList));
+
+  displayMessages();
+}
+
+// Display Messages in list
+function displayMessages() {
+  const messageList = JSON.parse(localStorage.getItem('messageList')) || [];
+  const messageListContainer = document.getElementById('messageList');
+  messageListContainer.innerHTML = '';
+
+  messageList.forEach(message => {
+      const li = document.createElement('li');
+      li.textContent = message;
+      messageListContainer.appendChild(li);
+  });
+}
+
+// Load stored data on page load
+window.onload = function() {
+  displayRSVP();
+  displayMessages();
 }
